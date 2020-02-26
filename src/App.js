@@ -7,7 +7,7 @@ function App() {
   const [teamMember, setTeamMember] = useState([
     {
       id: 1,
-      Name: 'Ben Berger',
+      name: 'Ben Berger',
       email:
         'Bbjberg91@gmail.com',
       role: 'fullstack developer'
@@ -18,8 +18,8 @@ function App() {
   const addNewMember= member =>{
     const newMember= {
       id: Date.now(),
-      Name: member.name,
-      Email: member.email,
+      name: member.name,
+      email: member.email,
       role: member.role
     };
     setTeamMember([...teamMember, newMember])
